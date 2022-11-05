@@ -1,0 +1,44 @@
+spring:
+  data:
+    mongodb:
+      username: xiaolin
+      password: '123456'
+      port: 27017
+#      host: localhost
+      host: 121.4.170.191
+      database: xiaolin
+#         uri: mongodb://localhost:27017/xiaolin
+#      uri: mongodb://root:'123456'@121.4.170.191:27017/xiaolin
+  datasource:
+    username: xiaolin
+    password: 123456
+    url: jdbc:mysql://121.4.170.191:3306/xiaolin?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  mail:
+    #smtp服务主机  qq邮箱则为smtp.qq.com
+    host: smtp.qq.com
+    #服务协议
+    protocol: smtp
+    # 编码集
+    default-encoding: UTF-8
+    #发送邮件的账户
+    username: 3459049385@qq.com
+    #授权码
+    password: utrgzvguxpducieb
+    test-connection: true
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+server:
+  port: 8181
+
+#查看mybatis-plus执行语句
+
+#mybatis-plus:
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
